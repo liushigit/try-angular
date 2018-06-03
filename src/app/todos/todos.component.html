@@ -1,6 +1,8 @@
 <h2>要做的事</h2>
 <ul class="todos">
-  <li *ngFor="let todo of todos">
-    <span class="badge">{{todo}}</span>
+  <li *ngFor="let todo of todos" (click)="onSelect(todo)">
+    <span class="badge">{{todo.title}}</span>
   </li>
 </ul>
+
+<app-todo-detail [todo]="selectedTodo"></app-todo-detail>

@@ -1,0 +1,8 @@
+<div *ngIf="todo">
+  <h2>{{ selectedTodo.title | uppercase }} 详情</h2>
+  <div>
+    <label>goal:
+      <input [(ngModel)]="todo.title" placeholder="title">
+    </label>
+  </div>
+</div>
